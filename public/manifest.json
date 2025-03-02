@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro Timer",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro timer extension to help you stay focused",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_width": 400,
+    "default_height": 600
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms",
+    "system.display",
+    "commands"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": [
+      "sounds/focus-end.mp3",
+      "sounds/break-end.mp3",
+      "sounds/notification.mp3",
+      "images/icon16.png",
+      "images/icon48.png",
+      "images/icon128.png"
+    ],
+    "matches": ["<all_urls>"]
+  }],
+  "commands": {
+    "show-timer": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "显示计时器状态"
+    },
+    "toggle-timer": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "开始或暂停计时器"
+    }
+  }
+}

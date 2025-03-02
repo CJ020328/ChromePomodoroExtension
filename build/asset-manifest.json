@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/static/js/main.f2dded01.js",
+    "sounds/focus-end.mp3": "/sounds/focus-end.mp3",
+    "sounds/break-end.mp3": "/sounds/break-end.mp3",
+    "images/break-icon.png": "/images/break-icon.png",
+    "images/icon128.png": "/images/icon128.png",
+    "images/icon48.png": "/images/icon48.png",
+    "manifest.json": "/manifest.json",
+    "index.html": "/index.html",
+    "images/icon16.png": "/images/icon16.png",
+    "main.f2dded01.js.map": "/static/js/main.f2dded01.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f2dded01.js"
+  ]
+}
